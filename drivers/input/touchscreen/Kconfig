@@ -1454,4 +1454,9 @@ config TOUCHSCREEN_RAYDIUM_CHIPSET
 
 	  If unsure, say N.
 
+config TOUCHSCREEN_DOUBLETAP2WAKE
+	bool "DoubleTap2Wake for touchscreens"
+	depends on TOUCHSCREEN_FT5336
+	default n
+
 endif
