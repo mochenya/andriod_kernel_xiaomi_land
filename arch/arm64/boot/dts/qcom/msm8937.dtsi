@@ -24,7 +24,7 @@
 	interrupt-parent = <&wakegic>;
 
 	chosen {
-		bootargs = "kpti=0 noirqdebug quiet cpuidle.governor=teo";
+		bootargs = "kpti=0 noirqdebug quiet cpuidle.governor=teo rcu_nocbs=0-7";
 	};
 
 	firmware: firmware {
